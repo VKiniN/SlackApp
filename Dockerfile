@@ -10,7 +10,7 @@ FROM registry.access.redhat.com/ubi9/nginx-120
 
 
 
-COPY --from=builder /app/nginx.conf /etc/nginx/nginx.conf
+# COPY --from=builder /app/nginx.conf /etc/nginx/nginx.conf
 WORKDIR /code
 COPY --from=builder /app .
 EXPOSE 8080:8080
