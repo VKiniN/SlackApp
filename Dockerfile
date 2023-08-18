@@ -1,4 +1,4 @@
-FROM FROM dockerregistry-v2.vih.infineon.com/nginx
+FROM dockerregistry-v2.vih.infineon.com/nginx
 WORKDIR /slickapp
 COPY . /usr/share/nginx/html
 #FROM dockerregistry-v2.vih.infineon.com/node:alpine3.16 as builder
