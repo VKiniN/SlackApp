@@ -5,7 +5,7 @@ COPY . .
 
 
 # nginx state for serving content
-FROM registry.access.redhat.com/ubi9/nginx-120
+FROM dockerregistry-v2.vih.infineon.com/nginx-120
 
 
 
