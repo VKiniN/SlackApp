@@ -1,3 +1,4 @@
+FROM dockerregistry-v2.vih.infineon.com/node:alpine3.16 as builder
 WORKDIR /app
 # # Copy all files from current directory to working dir in image
 COPY . .
@@ -5,7 +6,7 @@ COPY . .
 
 
 # nginx state for serving content
-FROM dockerregistry-v2.vih.infineon.com/nginx-120
+FROM registry.access.redhat.com/ubi9/nginx-120
 
 
 
